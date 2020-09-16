@@ -25,3 +25,8 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 ANDROID_ROOT="$MY_DIR"/../../..
 BLOB_ROOT="$ANDROID_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+
+CHARGE_ONLY="$BLOB_ROOT"/vendor/bin/charge_only_mode
+for LIBMEMSET_SHIM in $(grep -L "libmemset_shim.so" "$CHARGE_ONLY"); do
+    patchelf --add-needed "libmemset_shim.so" "$LIBMEMSET_SHIM"
+done
