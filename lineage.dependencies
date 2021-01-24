@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "device_motorola_trinket-common",
+    "target_path": "device/motorola/trinket-common"
+  }
+]
