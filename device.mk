@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+PRODUCT_SHIPPING_API_LEVEL := 28
+
 $(call inherit-product, device/motorola/sm6150-common/common.mk)
 
 # Get non-open-source specific aspects
