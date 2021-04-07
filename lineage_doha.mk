@@ -15,17 +15,16 @@
 #
 
 # Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from doha device
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
+$(call inherit-product, device/motorola/doha/device.mk)
 
 # Device identifier
 PRODUCT_BRAND := motorola
@@ -42,4 +41,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC=" 10 QPI30.28-Q3-28-26 20e48 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := motorola/doha_retail/doha:10/QPI30.28-Q3-28-26/20e48:user/release-keys
+BUILD_FINGERPRINT := "motorola/doha_retail/doha:10/QPIS30.28-Q3-28-26-5/5c146:user/release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=doha_retail \
+    PRIVATE_BUILD_DESC="doha_retail-user 10 QPIS30.28-Q3-28-26-5 5c146 release-keys"
+
+PRODUCT_GMS_CLIENTID_BASE := android-motorola
