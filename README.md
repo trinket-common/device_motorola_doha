@@ -7,7 +7,7 @@ Copyright (C) 2020 - 2021 Doritos™ Motorola | Developers
 Basic   | Spec Sheet
 -------:|:-------------------------
 CPU     | Octa-core (2x2.0 GHz Kryo 460 Gold & 6x1.7 GHz Kryo 460 Silver)
-CHIPSET | Qualcomm Trinket Snapdragon 675
+CHIPSET | Qualcomm Trinket Snapdragon 665
 Resolution | 1080 * 2280
 GPU     | Adreno 610
 Memory  | 4 GB
@@ -20,7 +20,7 @@ Rear Camera  | 48 MP (f/1.7) + 16 MP (f/2.2) + 5 MP (f/2.2) (PDAF, OIS)
 Front Camera | 25 MP (f/2.0)
 Treble | A / B
 
-![Motorola G8 Plus](https://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g8-plus-1.jpg "Motorola G8 Plus")
+![Motorola G8 Plus](https://fdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g8-plus-3.jpg "Motorola G8 Plus")
 
 ### How to compile
 
