@@ -23,5 +23,8 @@ DEVICE_PATH := device/motorola/doha
 # Display
 TARGET_SCREEN_DENSITY := 420
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/lineageos_doha_defconfig
