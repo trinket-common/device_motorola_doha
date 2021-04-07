@@ -23,7 +23,6 @@ $(call inherit-product, vendor/motorola/doha/doha-vendor.mk)
 
 # Dynamic Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
-PRODUCT_SHIPPING_API_LEVEL := 28
 PRODUCT_USE_DYNAMIC_PARTITIONS := false
 
 # Display size
