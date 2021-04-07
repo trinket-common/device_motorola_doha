@@ -15,17 +15,22 @@
 # limitations under the License.
 #
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
-
 # Common configurations
 $(call inherit-product, device/motorola/trinket-common/common.mk)
 
 # Add proprietary blobs from vendor device
 $(call inherit-product, vendor/motorola/doha/doha-vendor.mk)
 
+# Dynamic Partitions
+PRODUCT_BUILD_SUPER_PARTITION := false
+PRODUCT_SHIPPING_API_LEVEL := 28
+PRODUCT_USE_DYNAMIC_PARTITIONS := false
+
 # Display size
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+    
