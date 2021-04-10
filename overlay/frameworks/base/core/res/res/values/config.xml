@@ -44,6 +44,9 @@
         <item>1250</item>
         <item>3500</item>
         <item>5500</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>>
     </integer-array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
@@ -58,15 +61,18 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>2</item>
-        <item>10</item>
-        <item>20</item>
+        <item>4</item>
+        <item>15</item>
+        <item>40</item>
         <item>80</item>
         <item>93</item>
         <item>125</item>
         <item>161</item>
         <item>212</item>
-        <item>420</item>
+        <item>304</item>
+        <item>350</item>
+        <item>430</item>
+        <item>600</item>
     </array>
 
     <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
@@ -76,36 +82,40 @@
          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
-        <item>2</item>
-        <item>10</item>
-        <item>20</item>
+        <item>4</item>
+        <item>15</item>
+        <item>40</item>
         <item>80</item>
         <item>93</item>
         <item>125</item>
         <item>161</item>
         <item>212</item>
-        <item>420</item>
+        <item>304</item>
+        <item>350</item>
+        <item>430</item>
     </array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
          This array should be equal in size to config_screenBrightnessBacklight. -->
     <integer-array name="config_screenBrightnessBacklight">
-        <item>1</item>
+        <item>2</item>
         <item>8</item>
-        <item>12</item>
-        <item>48</item>
+        <item>23</item>
+        <item>47</item>
         <item>56</item>
-        <item>78</item>
-        <item>99</item>
-        <item>122</item>
+        <item>73</item>
+        <item>95</item>
+        <item>125</item>
+        <item>180</item>
+        <item>207</item>
         <item>255</item>
     </integer-array>
 
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDim">6</integer>
+    <integer name="config_screenBrightnessDim">2</integer>
 
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
@@ -113,7 +123,7 @@
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">1</integer>
+    <integer name="config_screenBrightnessSettingMinimum">2</integer>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
          for debouncing the light sensor.  Different constants are used to debounce the light sensor
@@ -126,9 +136,6 @@
          For this time after the screen turns on, the Power Manager
          will not debounce light sensor readings -->
     <integer name="config_lightSensorWarmupTime">200</integer>
-
-    <!-- The default peak refresh rate for a given device. -->
-    <integer name="config_defaultPeakRefreshRate">90</integer>
 
     <!-- Control whether the always on display mode is available. This should only be enabled on
          devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
@@ -156,25 +163,6 @@
              <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string name="config_mainBuiltInDisplayCutout">
-        M 0, 0
-        H 164
-        V 90
-        H 0
-        L 0, 0
-        @left
-    </string>
-
-    <!-- Not allow to switch to higher refresh rate when (display, ambient) brightness falls into
-         the region defined by the two arrays -->
-    <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
-        <item>-1</item>
-    </integer-array>
-    <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
-        <item>-1</item>
-    </integer-array>
-
-    <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
-    <integer name="config_defaultRefreshRateInZone">90</integer>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -80,0 L -80,80 L 80,80 L 80,0 Z</string>
 
 </resources>
