@@ -1,19 +1,17 @@
-# Device configuration for Motorola Edge
-
-## Device specifications
+# Device specifications for Motorola One Zoom
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Octa-core (1x2.4 GHz Kryo 475 Prime & 1x2.2 GHz Kryo 475 Gold & 6x1.8 GHz Kryo 475 Silver)
-CHIPSET | Qualcomm SM7250 Snapdragon 765G
-GPU     | Adreno 620
+CPU     | Octa-core (2x2.0 GHz Kryo 460 Gold & 6x1.7 GHz Kryo 460 Silver)
+CHIPSET | Qualcomm SDM675 Snapdragon 675
+GPU     | Adreno 612
 Memory  | 4 / 6GB
-Shipped Android Version | 10
+Shipped Android Version | 9 (Pie)
 Storage | 128GB
-Battery | 4500 mAh
-Dimensions | 161.6 x 71.1 x 9.3 mm
-Display | 1080 x 2340 pixels, 6.7" OLED, 90Hz, HDR10
-Rear Camera  | 64 MP (f/1.8) + 8 MP (f/2.4) + 16 MP (f/2.2)
+Battery | 4000 mAh
+Dimensions | 158 x 75 x 8.8 mm
+Display | 1080 x 2340 pixels, 6.39" Super AMOLED
+Rear Camera  | 48 MP (f/1.7) + 8 MP (f/2.4) + 16 MP (f/2.2) + 5 MP (f/2.2) (PDAF, OIS)
 Front Camera | 25 MP (f/2.0)
 
-![Device Picture](https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-midnight-magenta-1.jpg)
+![Device Picture](https://fdn2.gsmarena.com/vv/pics/motorola/motorola-one-zoom-r1.jpg)
