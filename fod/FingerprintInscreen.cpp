@@ -34,7 +34,7 @@
 #define FOD_SENSOR_Y 1920
 #define FOD_SENSOR_SIZE 182
 
-#define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
+#define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui"
 
 namespace vendor {
 namespace lineage {
