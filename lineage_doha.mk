@@ -33,12 +33,15 @@ PRODUCT_MANUFACTURER := motorola
 PRODUCT_NAME := lineage_doha
 PRODUCT_MODEL := Moto G⁸ Plus
 
+PRODUCT_AAPT_CONFIG := xxxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
+
 # Build Environment
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 TARGET_VENDOR := motorola
 TARGET_VENDOR_PRODUCT_NAME := doha
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC=" 10 QPI30.28-Q3-28-26 20e48 release-keys"
+    PRIVATE_BUILD_DESC=" 10 QPIS30.28-Q3-28-26-5 5c146 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "motorola/doha_retail/doha:10/QPIS30.28-Q3-28-26-5/5c146:user/release-keys"
