@@ -21,6 +21,11 @@ $(call inherit-product, device/motorola/trinket-common/common.mk)
 # Add proprietary blobs from vendor device
 $(call inherit-product, vendor/motorola/doha/doha-vendor.mk)
 
+# Camera VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc++-doha.so \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++-doha.so
+
 # Dynamic Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := false
