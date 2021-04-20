@@ -21,10 +21,6 @@ DEVICE_PATH := device/motorola/doha
 # Display
 TARGET_SCREEN_DENSITY := 420
 
-# FM
-BOARD_HAVE_QCOM_FM := true
-BOARD_HAS_QCA_FM_SOC := "cherokee"
-
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
