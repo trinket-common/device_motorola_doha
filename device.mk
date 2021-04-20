@@ -14,6 +14,11 @@
 # limitations under the License.
 #
 
+# You must declare the product shipped and if use dynamic partitions
+PRODUCT_BUILD_SUPER_PARTITION := false
+PRODUCT_SHIPPING_API_LEVEL := 28
+PRODUCT_USE_DYNAMIC_PARTITIONS := false
+
 $(call inherit-product, device/motorola/sm6125-common/common.mk)
 
 # Get non-open-source specific aspects
