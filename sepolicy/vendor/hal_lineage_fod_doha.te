@@ -1,0 +1,16 @@
+type hal_lineage_fod_racer, domain;
+hal_server_domain(hal_lineage_fod_doha, hal_lineage_fod)
+
+type hal_lineage_fod_racer_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_lineage_fod_doha)
+
+wakelock_use(hal_lineage_fod_doha)
+
+# Allow access to the HALs
+hal_client_domain(hal_lineage_fod_doha, hal_fingerprint)
+
+# Allow binder communication with hal_fingerprint_doha
+binder_call(hal_lineage_fod_doha, hal_fingerprint_default)
+
+allow hal_lineage_fod_doha sysfs_graphics:dir r_dir_perms;
+allow hal_lineage_fod_doha sysfs_graphics:file r_file_perms;

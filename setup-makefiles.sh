@@ -8,8 +8,8 @@
 
 set -e
 
-export DEVICE=racer
-export DEVICE_COMMON=sm7250-common
+export DEVICE=doha
+export DEVICE_COMMON=sm6125-common
 export VENDOR=motorola
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"

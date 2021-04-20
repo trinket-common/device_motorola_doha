@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/motorola/sm7250-common/common.mk)
+$(call inherit-product, device/motorola/sm6125-common/common.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/motorola/racer/racer-vendor.mk)
+$(call inherit-product, vendor/motorola/doha/doha-vendor.mk)
 
 # Properties
 -include $(LOCAL_PATH)/properties.mk
@@ -40,7 +40,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.racer
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.doha
 
 # FM
 PRODUCT_PACKAGES += \

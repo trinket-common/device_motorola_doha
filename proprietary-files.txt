@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from Racer QPD30.114-80
+# All unpinned blobs below are extracted from Doha QPIS30.28-Q3-28-26
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb

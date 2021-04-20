@@ -14,15 +14,15 @@
 # limitations under the License.
 #
 
--include device/motorola/sm7250-common/BoardConfigCommon.mk
+-include device/motorola/sm6125-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/motorola/racer
+DEVICE_PATH := device/motorola/doha
 
 # Display
 TARGET_SCREEN_DENSITY := 420
 
 # FOD
-TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.racer
+TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.doha
 TARGET_USES_FOD_ZPOS := true
 
 # FM
@@ -33,7 +33,7 @@ BOARD_HAS_QCA_FM_SOC := "cherokee"
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/racer_defconfig
+TARGET_KERNEL_CONFIG := vendor/doha_defconfig
 
 # Kernel modules - Audio
 TARGET_MODULE_ALIASES += \
