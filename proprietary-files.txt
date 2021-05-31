@@ -169,9 +169,9 @@ vendor/firmware/leia_pm4_470.fw
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc
 vendor/lib64/hw/fingerprint.goodix.so
-vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.0.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1_vendor.so
+vendor/lib64/com.motorola.hardware.display.panel@1.0.so
 
 # Goodix - Firmware
 vendor/firmware/goodix-gtx5-16-04-foles.bin
@@ -310,9 +310,9 @@ vendor/etc/sensors/config/vcnl36866_0.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 vendor/etc/ssg/ta_config.json
-vendor/lib/sensors.dt.so
-vendor/lib/sensors.iio.so
-vendor/lib/sensors.rp.so
-vendor/lib/sensors.ssc.so
-vendor/lib/sensors.tof.so
-vendor/lib/sensors.tof.vl53l1.so
+vendor/lib64/sensors.dt.so
+vendor/lib64/sensors.iio.so
+vendor/lib64/sensors.rp.so
+vendor/lib64/sensors.ssc.so
+vendor/lib64/sensors.tof.so
+vendor/lib64/sensors.tof.vl53l1.so

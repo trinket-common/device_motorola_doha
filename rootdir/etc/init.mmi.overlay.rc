@@ -25,11 +25,11 @@ on boot
    chown system system /sys/class/capsense/reset
 
    # Change the ownership of display TE files for tcmds
-   chown root vendor_tcmd /sys/class/graphics/fb0/te_test
-   chown root vendor_tcmd /sys/class/graphics/fb0/te_enable
-   chown root vendor_tcmd /sys/class/graphics/fb0/frame_counter
-   chown root vendor_tcmd /d/dsi_smd_639_1080x2340_cmd_display/esd_check_mode
-   chown root vendor_tcmd /d/dsi_tianma_639_1080x2340_cmd_display/esd_check_mode
+   chown root oem_5004 /sys/class/graphics/fb0/te_test
+   chown root oem_5004 /sys/class/graphics/fb0/te_enable
+   chown root oem_5004 /sys/class/graphics/fb0/frame_counter
+   chown root oem_5004 /d/dsi_smd_639_1080x2340_cmd_display/esd_check_mode
+   chown root oem_5004 /d/dsi_tianma_639_1080x2340_cmd_display/esd_check_mode
    chmod 0664 /d/dsi_tianma_639_1080x2340_cmd_display/esd_check_mode
    chmod 0664 /d/dsi_smd_639_1080x2340_cmd_display/esd_check_mode
 
@@ -60,8 +60,8 @@ on boot
    chown system system /sys/class/backlight/panel0-backlight/brightness
 
    # Change ownership and permission for AMPS factory testing
-   chown root vendor_tcmd /sys/devices/platform/soc/a600000.ssusb/modusb_enable
-   chown root vendor_tcmd /sys/devices/platform/soc/a600000.ssusb/modusb_protocol
+   chown root oem_5004 /sys/devices/platform/soc/a600000.ssusb/modusb_enable
+   chown root oem_5004 /sys/devices/platform/soc/a600000.ssusb/modusb_protocol
 
    # change permission of red/green/blue leds
    chown system system /sys/class/leds/red_moto/brightness
@@ -87,10 +87,10 @@ on boot
    chmod 0664 /sys/class/leds/blue_moto/led_time
 
    # Change ownership and permission for camera dual calibration data
-   chown vendor_tcmd vendor_tcmd /mnt/vendor/persist/camera/dualcal/dual_cal_data_tele.bin
-   chown vendor_tcmd vendor_tcmd /mnt/vendor/persist/camera/dualcal/dual_cal_data_wide.bin
-   chown vendor_tcmd vendor_tcmd /mnt/vendor/persist/camera/dualcal/dual_cal_data_depth.bin
-   chown vendor_tcmd vendor_tcmd /mnt/vendor/persist/camera/dualcal/module_id.bin
+   chown oem_5004 oem_5004 /mnt/vendor/persist/camera/dualcal/dual_cal_data_tele.bin
+   chown oem_5004 oem_5004 /mnt/vendor/persist/camera/dualcal/dual_cal_data_wide.bin
+   chown oem_5004 oem_5004 /mnt/vendor/persist/camera/dualcal/dual_cal_data_depth.bin
+   chown oem_5004 oem_5004 /mnt/vendor/persist/camera/dualcal/module_id.bin
    chmod 0664 /mnt/vendor/persist/camera/dualcal/dual_cal_data_tele.bin
    chmod 0664 /mnt/vendor/persist/camera/dualcal/dual_cal_data_wide.bin
    chmod 0664 /mnt/vendor/persist/camera/dualcal/dual_cal_data_depth.bin

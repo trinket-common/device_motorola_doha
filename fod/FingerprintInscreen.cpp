@@ -30,9 +30,9 @@
 #define NOTIFY_FINGER_DOWN 1536
 #define NOTIFY_FINGER_UP 1537
 
-#define FOD_SENSOR_X 449
-#define FOD_SENSOR_Y 1920
-#define FOD_SENSOR_SIZE 182
+#define FOD_SENSOR_X 444
+#define FOD_SENSOR_Y 1755
+#define FOD_SENSOR_SIZE 192
 
 #define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui"
 
