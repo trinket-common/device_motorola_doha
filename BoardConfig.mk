@@ -37,8 +37,7 @@ TARGET_MODULE_ALIASES += \
     snd-soc-cs35l41.ko:cirrus_cs35l41.ko \
     snd-soc-cs47l35.ko:cirrus_cs47l35.ko \
     snd-soc-madera.ko:cirrus_madera.ko \
-    snd-soc-wm-adsp.ko:cirrus_wm_adsp.ko \
-    irq-madera.ko:cirrus_irq-madera.ko
+    snd-soc-wm-adsp.ko:cirrus_wm_adsp.ko
 
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3489660928
