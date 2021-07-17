@@ -7,8 +7,8 @@
 
 set -e
 
-export DEVICE=parker
-export DEVICE_COMMON=sm6150-common
+export DEVICE=doha
+export DEVICE_COMMON=sm6125-common
 export VENDOR=motorola
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"

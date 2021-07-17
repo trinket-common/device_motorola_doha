@@ -4,15 +4,7 @@
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.camera.physical.num=5
-
-# Fingerprint
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.fingerprint=goodix
-
-# Firmware
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.hw.modem_version=.
+    persist.vendor.camera.physical.num=4
 
 # HDR
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -20,5 +12,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Sensor
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.hardware.sensors=parker \
-    ro.vendor.sensors.mot_ltv=tru
+    ro.hardware.sensors=doha \
+    ro.vendor.sensors.mot_ltv=true
