@@ -388,13 +388,6 @@ vendor/lib/hw/camera.trinket.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libmotext_inf.so
 
-# Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc
-vendor/lib64/com.fingerprints.extension@1.0.so
-
 # Display (HDR)
 vendor/etc/hdr_tm_config.xml
 
@@ -408,6 +401,22 @@ vendor/firmware/focaltech-ft8719-a0-0000-doha.bin
 vendor/firmware/FT8006U_Pramboot.bin
 vendor/firmware/himax-HX83112A-doha.csv
 vendor/firmware/hx_criteria.csv
+
+# Fingerprint
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc
+vendor/bin/hw/egis_ident
+vendor/bin/hw/fpc_ident
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc
+vendor/etc/init/init.ets.rc
+vendor/lib/libets_fp_et5.so
+vendor/lib/libets_teeclient.so
+vendor/lib/vendor.egistec.hardware.fingerprint@2.0.so
+vendor/lib64/com.fingerprints.extension@1.0.so
+vendor/lib64/libets_fp_et5.so
+vendor/lib64/libets_teeclient.so
+vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so
 
 # Misc Firmware
 vendor/firmware/leia_pfp_470.fw
